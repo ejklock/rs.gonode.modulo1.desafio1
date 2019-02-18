@@ -1,0 +1,11 @@
+<h1>Informe sua Idade</h1>
+
+{% if ageValidateError == true %}
+    <h2>Você não informou uma idade</h2>
+{% endif %}
+
+<form action="/check" method="POST">
+    <label for="age">Sua Idade:</label>
+    <input id="age" type="text" name="age"/>
+    <button type="submit">Verificar Idade</button>
+</form>
